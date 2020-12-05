@@ -3,62 +3,51 @@
 
 ### Inspiration ⚡
 
-<strong>Mental health is a stigma in the so called modern society of ours, where people cannot talk about their problems and grievances openly and express themselves. Around 6.7 percent of the U.S. adult population suffer from one or the other mental disease which is often neglected. There are hundreds and thousands of people out there who require attention and need someone to support them. Therefore, we present to you : </strong>
+<strong>Mental health is a stigma in the so called modern society of ours, where people cannot talk about their problems and grievances openly and express themselves. Around 6.7 percent of the U.S. adult population suffer from one or the other mental disease which is often neglected. There are hundreds and thousands of people out there who require attention and need someone to support them. Therefore, we present to you Merry Cacti, your companion which promises comfort and compasion. </strong>
 
-<p  align="center"><img height= "500" width = "700" src = "https://github.com/Apurva-tech/files/blob/master/Logo.jpg"></p>
+<p  align="center"><img height= "400" width = "600" src = "https://github.com/Apurva-tech/files/blob/master/Landling.gif"></p>
 
 ### What it does 🤖
 
-We created this application to help users maintain a good posture and save from early signs of postural imbalance and protect your vision, this application uses a 
-image classifier from teachable machines, which is a <strong>Google API</strong> to detect user's posture and notifies the user to correct their posture or move away 
-from the screen when they may not notice it. It notifies the user when he/she is sitting in a bad position or is too close to the screen. 
+We created this application to help the users suffering from mental health illness and comfort them. Merry Cacti is a <strong>reddit bot</strong> which finds the user's post which implies depressive and self destructive sentiments and replies happy thoughts and redirects them to our website where we provide a platform to help such users express themselves anonymously and help each other using a subreddit. 
 
-We first trained the model on the Google API to detect good posture/bad posture and if the user is too close to the screen. Then integrated the model to our application. 
-We created a notification service so that the user can use any other site and simultaneously get notified if their posture is bad. We have also included <strong>
-EchoAR models to educate </strong> the children about the harms of sitting in a bad position and importance of healthy eyes 👀.
+We at first extracted the data to train our model by using the reddit json file and then process the data to create a final csv file. We used nltk and spacy to pre-process the Reddit post text data and analyse if the text is suicidal or depressive, and comment on the post accordingly. We created a website where people can view our bot replies on Reddit and chat with our bot integrated into the website. 
 
 ### How We built it 💡
 
-1. The website UI/UX was designed using Figma and then developed using HTML, CSS and JavaScript.Tensorflow.js was used to detect pose and JavaScript API to send notifications.
-2. We used the Google Tensorflow.js API to train our model to classify user's pose, proximity to screen and if the user is holding a phone.
-3. For training our model we used our own image as the train data and tested it in different settings.
-4. This model is then used to classify the users video feed to assess their pose and detect if they are slouching or if they are too close too screen or are sitting in a generally a bad pose.
-5. If the user sits in a bad posture for a few seconds then the bot sends a notificaiton to the user to correct their posture or move away from the screen.
+1. The website UI/UX was designed using Figma. 
+2. We used Python to create the bot. We extracted the data from a subreddit json file and processed the required data to create the final file.  
+3. For training our model we used scikit-learn TFDVectorizer which gave the best model accuracy of 95%, to create predictions if the post depicts suicdal or depressed behaviour.
 
 
 ### Challenges we ran into 🧠
 
-- Creating a model with good acccuracy in a general setting.
-- Reverse engineering the Teachable Machine's Web Plugin snippet to aggregate data and then display notification at certain time interval.
-- Integrating the model into our website. 
-- Embedding EchoAR models to educate the children about the harms to sitting in a bad position and importance of healthy eyes.
-- Deploying the application.
+- Extracting the data for training the model.
+- Pre-processing the model 
+- Creating a chat-bot for the website and integrating it.
+- Using reddit API json file to create embeds of the replies and posts for the website.
 
 ### Accomplishments that we are proud of 😌
 
-We created a completely functional application, which can make a small difference in in our everyday health. We successfully made the applicaition display 
-system notifications which can be viewed across system even in different apps. We are proud that we could shape our idea into a functioning application which can be used by 
-any user!
+We created a fully functional bot which can emphathize with human being and comfort them. We are very proud to share that some comments did help our users and made them feel better themselves. We integrated a chatbot to our website which can help users to talk and make them feel loved and supported. 
 
 ### What we learned 🤩
 
-We learned how to integrate Tensorflow.js models into an application. The most exciting part was learning how to train a model on our own data using the Google API. 
-We also learned how to create a notification service for a application. And the best of all <strong>playing with EchoAR models</strong> to create a functionality which could 
-actually benefit student and help them understand the severity of the cause.  
+We learned basic structure of natural language processing using nltk and spaCy using Python. And creating and integrating a chatbot in our website. 
 
-### What's next for Pose-Bot 📈
+### What's next for Merry Cacti 📈
 
-#### ➡ Creating a chrome extension
+#### ➡ Creating a functional forum
 
-So that the user can use the functionality on their web browser.
+So that the user can communicate anonymously and help each other. 
 
-#### ➡ Improve the pose detection model. 
+#### ➡ Improve the NLP model. 
 
-The accuracy of the pose detection model can be increased in the future.
+The accuracy of the NLP model can be increased in the future.
 
-#### ➡ Create more classes to help students more concentrate. 
+#### ➡ Improving the functionality of our chat-bot
 
-Include more functionality like screen time, and detecting if the user is holding their phone, so we can help users to concentrate. 
+Include more functionality like increasing the accuracy of the bot-replies. 
 
 ### Help File 💻
 
@@ -77,14 +66,21 @@ Include more functionality like screen time, and detecting if the user is holdin
 
 ### Built With ⚙
 
+#### The Website
+
 - [x] HTML
 - [x] CSS
-- [x] Javascript
-  - Tensorflow.js
-- [x] Google API
-- [x] EchoAR
-- [x] Google Poly
-- [x] Deployed on Vercel
+
+#### The Reddit Bot
+- [x] Python
+  - NLTK
+  - Numpy
+  - Pandas
+  - Seaborn
+  - SpaCy
+  - Scikit-learn
+  - PRAW
+
 
 ### Try it out 👇🏽
 
@@ -92,8 +88,9 @@ Include more functionality like screen time, and detecting if the user is holdin
 - 🕸 [The Website](https://Pose-Bot.vercel.app/#home)
 - 🖥 [The Figma Prototype](https://www.figma.com/file/utEHzshb9zHSB0v3Kp7Rby/Untitled?node-id=0%3A1)
 
-### 3️⃣ Cheers to the team 🥂
+### Cheers to the team 🥂
 
 - [Apurva Sharma](https://github.com/Apurva-tech)
 - [Aniket Singh Rawat](https://github.com/dikwickley)
 - [Dev Sharma](https://github.com/cryptus-neoxys)
+- [Vinayak gupta](https://github.com/gvinayakgupta)
