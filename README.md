@@ -1,12 +1,11 @@
-# Pose-Bot <img src="https://media.giphy.com/media/l3vRaWAPakjiEUQow/giphy.gif" width="80" height = "70" >
+# Merry Cacti <img src="https://github.com/Apurva-tech/files/blob/master/Bot-Avatar.jpg" width="100" height = "100">
+
 
 ### Inspiration ⚡
 
-<strong>In these difficult times, where everyone is forced to work remotely and with the mode of schools and colleges going digital, students are 
-spending time on the screen than ever before, it not only affects student but also employees who have to sit for hours in front of the screen. Prolonged exposture to
-computer screen and sitting in a bad posture can cause severe health problems like postural dysfunciton and affect one's eyes. Therefore, we present to you : </strong>
+<strong>Mental health is a stigma in the so called modern society of ours, where people cannot talk about their problems and grievances openly and express themselves. Around 6.7 percent of the U.S. adult population suffer from one or the other mental disease which is often neglected. There are hundreds and thousands of people out there who require attention and need someone to support them. Therefore, we present to you : </strong>
 
-<p  align="center"><img height= "300" width = "700" src = "https://github.com/Apurva-tech/files/blob/master/Pose-Bot-title.jpeg"></p>
+<p  align="center"><img height= "500" width = "700" src = "https://github.com/Apurva-tech/files/blob/master/Logo.jpg"></p>
 
 ### What it does 🤖
 
