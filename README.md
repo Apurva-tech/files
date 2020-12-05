@@ -31,6 +31,9 @@ We at first extracted the data to train our model by using the reddit json file 
 
 We created a fully functional bot which can emphathize with human being and comfort them. We are very proud to share that some comments did help our users and made them feel better themselves. We integrated a chatbot to our website which can help users to talk and make them feel loved and supported. 
 
+<p  align="center"><img height= "400" width = "600" src = "https://github.com/Apurva-tech/files/blob/master/167-points.jpg"></p>
+
+
 ### What we learned 🤩
 
 We learned basic structure of natural language processing using nltk and spaCy using Python. And creating and integrating a chatbot in our website. 
